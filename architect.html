@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            height:50px;
+            width:1350px;
+            position: fixed;
+            background-color: white;
+            z-index: 6;
+        }
+        #img{
+            position:relative;
+            height:600px;
+            width:1350px;
+        }
+        #f1{
+            height:50px;
+            width:1000px;
+            float:left;
+        }
+        #f2{
+            height:50px;
+            width:100px;
+            float:left;
+        }
+        #f3{
+            height:50px;
+            width:100px;
+            float:left;
+        }
+        #f4{
+            height:50px;
+            width:150px;
+            float:left;
+        }
+        #b
+        {
+            height:50px;
+            width:1300px;
+            margin-left:30px;   
+            border-bottom-width:3px; 
+            border-color: grey;   
+            border-bottom-style:solid;
+            z-index: 6;
+        }
+        #c{
+            height:610px;
+            width:1300px;
+            margin-left:30px;
+            margin-top:40px;
+            z-index: 6;
+            
+        }
+        #d{
+            height:300px;
+            width:1300px;
+            display:flex;
+            flex-direction: row;
+        }
+        #e{
+            height:300px;
+            width:1300px;
+            margin-top:10px;
+            display:flex;
+            flex-direction: row;
+        }
+        #s1{
+            position: relative;
+            height:300px; width:315px; margin-right:10px;
+        }
+        #s2{
+            position: relative;
+            height:300px; width:315px; margin-right:10px;
+        }
+        #s3{
+            position: relative;
+            height:300px; width:315px; margin-right:10px;
+        }
+        #s4{
+            position: relative;
+            height:300px; width:325px;
+        }
+        #s5{
+            position: relative;
+            height:300px; width:315px; margin-right:10px;
+        }
+        #s6{
+            position: relative;
+            height:300px; width:315px; margin-right:10px;
+        }
+        #s7{
+            position: relative;
+            height:300px; width:315px; margin-right:10px;
+        }
+        #s8{
+            position: relative;
+            height:300px; width:325px;
+        }
+        #r1{
+            background-color: black;
+            color: antiquewhite;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        #r2{
+            background-color: black;
+            color: antiquewhite;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        #r3{
+            background-color: black;
+            color: antiquewhite;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        #r4{
+            background-color: black;
+            color: antiquewhite;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        #r5{
+            background-color: black;
+            color: antiquewhite;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        #r6{
+            background-color: black;
+            color: antiquewhite;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        #r7{
+            background-color: black;
+            color: antiquewhite;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        #r8{
+            background-color: black;
+            color: antiquewhite;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        #sp{
+            height:50px;
+            width:1300px;
+            z-index: 4;
+            margin-left:30px;
+            border-width:3px;
+            border-color: grey;
+            border-bottom-style: solid;
+        }
+        #gr{
+            height:600px;
+            width:1300px;
+            margin-left: 30px;
+            z-index: 4;
+        }
+        #gri{
+            height:100px;
+            width:1300px;
+        }
+        #x{
+            height:500px;
+            width:1300px;
+            
+        }
+        #X{
+            height:500px;
+            width:315px;
+            margin-right: 10px;
+            float:left;
+            text-align:start;
+        }
+        #w{
+            height:500px;
+            width:315px;
+            margin-right: 10px;
+            float:left;
+
+        }
+        #y{
+            height:500px;
+            width:315px;
+            margin-right: 10px;
+            float:left;
+        }
+        #z{
+            height:500px;
+            width:320px;
+            float:left;
+        }
+        #x3,#w3,#y3,#z3{
+            color:grey;
+        }
+        #san{
+            height:320px;
+            width:1300px;
+            margin-left: 30px;
+            z-index: 4;
+        }
+        #v1{
+            height:50px;
+            width:1300px;
+            display:flex;
+            border-width:2px;
+            border-color: grey;
+            border-bottom-style: solid;
+            
+        }
+        #v2{
+            height:250px;
+            width:1300px;
+        }
+        #map{
+            height:1000px;
+            width:1300px;
+            margin-left:30px;
+            z-index: 4;
+        }
+        #fot{
+            height:90px;
+            width:1350px;;
+            background-color: black;
+            color: white;
+            text-align: center;
+            z-index: 4;
+        }
+        #t1{
+            position:absolute;
+            top:300px;
+            left:600px;
+            background-color: black;
+            color:white;
+            height:80px;
+            width:80px;
+            text-align:center;
+        }
+        #t2{
+            position:absolute;
+            top:300px;
+            left:700px;
+            color:white;
+        }
+        .img{
+            height:600px;
+            width:1350px;
+        }
+        .h1{
+            height:300px; 
+            width:315px;
+        }
+        .h2{
+            height:300px; 
+            width:325px;
+        }
+        .h4{
+            height:300px; width:315px;
+        }
+        .h5{
+            height:300px; width:325px;
+        }
+        .p1{
+            height:100px;
+            width:1300px;
+        }
+        .a1{
+            height:250px; width:315px;
+        }
+        .a2{
+            height:250px; width:325px;
+        }
+        .b1{
+            height: 30px; width:315px;
+        }
+        .p2{
+            height:60px;
+            width:315px;
+        }
+        .c1{
+            height:40px; width:315px; margin-top: 15px; background-color:gray;
+        }
+        .main1{
+            align-self: center;
+        }
+        .f1{
+            height: 20px; width:1290px;
+        }
+        .sub{
+            color: white; background-color: black;
+        }
+        .img1{
+            height: 1000px; width:1300px;
+        }
+        .s{
+            display: flex; align-items: center; justify-content: center;
+        }
+        @media screen and (min-width:320px) and (max-width:768px){
+            #img{
+                position:relative;
+                height:350px;
+                width:310px;
+            }
+            .img{
+                height:300px;
+                width:310px;
+            }
+            #t1{
+                position:absolute;
+                top:100px;
+                left:50px;
+                background-color: black;
+                color:white;
+                height:70px;
+                width:60px;
+                text-align:center;
+            }
+            #t2{
+                position:absolute;
+                top:100px;
+                left:120px;
+                color:white;
+            }
+            #c{
+            height:2500px;
+            width:280px;
+            margin-left:10px;
+            margin-top:40px;
+            margin-right: 10px;
+            
+            }
+            #d{
+            height:1240px;
+            width:280px;
+            display:flex;
+            flex-direction: column;
+            row-gap:10px;
+            
+            }
+            #e{
+            height:1240px;
+            width:280px;
+            display:flex;
+            flex-direction: column;
+            row-gap:10px;
+            
+            }
+
+            #s1,#s2,#s3,#s4{
+                position: relative;
+                height:300px;
+                width:280px;
+            }
+            .h1,.h2{
+                height:300px;
+                width:280px;
+            }
+            #s4,#s5,#s6,#s7{
+                position: relative;
+                height:300px;
+                width:280px;
+            }
+            .h4,.h5{
+                height:300px;
+                width:280px;
+            }
+            #gr{
+                height:2260px;
+                
+                width:280px;
+                margin-left: 10px;
+                
+            }
+            #gri{
+                height:250px;
+                width:280px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            .p1{
+                height:300px;
+                width:280px;
+            }
+            #x{
+                height:2000px;
+                width:280px;
+                
+                display: flex;
+                flex-direction: column;
+            }
+            .a1,.a2{
+                height:250px;
+                width:280px;
+            }
+            .p2{
+                height:60px;
+                width:280px;
+            }
+            .c1{
+                height:40px;
+                width:280px;
+            }
+            #san{
+                height:320px;
+                width:280px;
+                
+                margin-left: 10px;
+            }
+            .main1{
+            align-self: center;
+            }
+            #v1{
+            height:50px;
+            width:280px;
+            display:flex;
+            border-width:2px;
+            border-color: grey;
+            border-bottom-style: solid;
+            }
+            #v2{
+                height:250px;
+                width:280px;
+            }
+            .f1{
+                height:20px;
+                width:260px;
+            }
+            #map{
+                height:350px;
+                width:280px;
+                margin-left: 10px;
+            }
+            .img1{
+                height:350px;
+                width:280px;
+            }
+            #fot{
+                height:50px;
+                width:310px;
+            }
+            #b{
+                margin-left:10px;
+                height:50px;
+                width:280px;
+            }
+            #sp{
+                margin-left:10px;
+                height:50px;
+                width:280px;
+            }
+            #v1{
+                
+                height:50px;
+                width:280px;
+            }
+            
+    
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <div id="f1">
+            <button style="background-color:white; color:black; height:50px; width:150px; border-color: white;">BR Architects</button>
+        </div>
+        <div id="f2">
+            <a href="#b"><button style="background-color: white; color:black; height:50px; width:100px; border-color: white;" >Projects</button></a>
+        </div>
+        <div id="f3">
+            <a href="#sp"><button style="background-color: white; color:black; height:50px; width:100px; border-color: white;">About</button></a>
+        </div>
+        <div id="f4">
+            <a href="#san"><button style="background-color: white; color:black; height:50px; width:150px; border-color: white;">Contact</button></a>
+        </div>
+    </div>
+    <div id="img">
+        <img src="architect.jpg" alt="" class="img">
+        <div id="t1">
+             <h1>BR</h1>
+        </div>
+        <div id="t2">
+            <h1>Architects</h1>
+        </div>
+    </div>
+    
+    <div id="b">
+         <p style="height:50px;width:1300px;">PROJECTS</p>
+    </div>
+    <div id="c">
+        <div id="d">
+            <div id="s1">
+                <img src="summer house.jpg" alt=""  class="h1">
+                <p id="r1">SUMMER HOUSE</p>
+            </div>
+            <div id="s2" >
+                <img src="Brick house.jpg" alt=""  class="h1">
+                <p id="r2">BRICK HOUSE</p>
+            </div>
+            <div id="s3">
+                <img src="renovated.jpg" alt="" class="h1">
+                <P id="r3">RENOVATED</P>
+            </div>
+            <div id="s4">
+                <img src="Barn.jpg" alt="" class="h2">
+                <P id="r4">BARN HOUSE</P>
+            </div>
+        </div>
+        <div id="e">
+            <div id="s5">
+                <img src="house2.jpg" alt="" class="h4">
+                <p id="r1">SUMMER HOUSE</p>
+            </div>
+            <div id="s6">
+                <img src="brick house2.jpg" alt="" class="h4">
+                <p id="r2">BRICK HOUSE</p>
+            </div>
+            <div id="s7">
+                <img src="renovated2.jpg" alt="" class="h4">
+                <P id="r3">RENOVATED</P>
+            </div>
+            <div id="s8">
+                <img src="barn2.jpg" alt="" class="h5">
+                <P id="r4">BARN HOUSE</P>
+            </div>
+        </div>
+    </div>
+    <div id="sp">
+        <p style="height:50px; width:1300px;">ABOUT</p>
+    </div>
+    <div id="gr">
+        <div id="gri">
+            <p class=p1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div id="x">
+            <div id="X">
+               <div id="x1">
+                  <img src="john.jpg" alt="" class="a1">
+               </div>
+               <div id="x2">
+                    <h3  class="b1">John Doe</h3>
+                </div>
+                <div id="x3">
+                    <p>CEO & Founder</p>
+                </div>
+                <div id="x4">
+                    <p class="p2">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+                <div id="x5">
+                    <button  class="c1">contact</button>
+                </div>
+            </div>
+            <div id="w">
+                <div id="w1">
+                  <img src="jane doe.jpg" alt="" class="a1">
+               </div>
+                <div id="w2">
+                    <h3  class="b1">Jane Doe</h3>
+                </div>
+                <div id="w3">
+                    <p>Architect</p>
+                </div>
+                <div id="w4">
+                    <p class="p2">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+                <div id="w5">
+                    <button class="c1" >contact</button>
+                </div>
+            </div>
+            <div id="y">
+                <div id="y1">
+                  <img src="mikeross.jpg" alt="" class="a1">
+               </div>
+                <div id="y2">
+                    <h3 class="b1">Mike Ross</h3>
+                </div>
+                <div id="y3">
+                    <p>Architect</p>
+                </div>
+                <div id="y4">
+                    <p class="p2">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+                <div id="y5">
+                    <button class="c1">contact</button>
+                </div>
+            </div>
+            <div id="z">
+                <div id="z1">
+                  <img src="Danstar.jpg" alt="" class="a2">
+               </div>
+                <div id="z2">
+                    <h3  class="b1">Dan Star</h3>
+                </div>
+                <div id="z3">
+                    <p>Architect</p>
+                </div>
+                <div id="z4">
+                    <p class="p2">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+                <div id="z5">
+                    <button  class="c1">contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="san">
+        <div id="v1">
+               <h3>contact</h3>
+        </div>
+        <div id="v2">
+            <p>Lets get in touch and talk about your next project.</p>
+            <form action="">
+            <input type="text" name="" id=" " placeholder="Name" class="f1"><br><br>
+            <input type="text" name="" id=" " placeholder="Email" class="f1"><br><br>
+            <input type="text" name="" id=" " placeholder="Subject" class="f1"><br><br>
+            <input type="text" name="" id=" " placeholder="Comment" class="f1"><br><br>
+            <submit class="sub">SEND MESSAGE</submit>
+            </form>
+        </div>
+    </div>
+    <div id="map">
+        <img src="map.jpg" alt="" class="img1">
+    </div>
+    <div id="fot">
+        <div class="s">
+            <p>Powered by<a href="" style="color: white;">w3.css</a></p>
+        </div>
+    </div>
+</body>
+</html>
