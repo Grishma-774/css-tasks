@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display:grid;
+            height:100vh;
+            
+            grid-template-areas:'img1 img2 img2 img2 img3'
+                                'img4 img2 img2 img2 img5'
+                                'img6 img7 img8 img9 img10';
+            row-gap:5px;
+            
+        }
+        .child1,.child3,.child4,.child5,.child6,.child7,.child8,.child9,.child10{
+            background-color: brown;
+            
+            
+        }
+        .child1{
+            grid-area: img1;
+            height:150px;
+            width:200px;
+            
+
+        }
+        .child2{
+            grid-area: img2;
+            background-color: brown;
+            height:460px;
+            width:900px;
+
+        }
+        .child3{
+            grid-area: img3;
+            height:150px;
+            width:200px;
+        }
+        .child4{
+            grid-area: img4;
+            height:250px;
+            width:200px;
+        }
+        .child5{
+            grid-area: img5;
+            height:250px;
+            width:200px;
+        }
+        .child6{
+            grid-area: img6;
+            height:140px;
+            width:200px;
+            margin-right: 10px;
+        }
+        .child7{
+            grid-area: img7;
+            height:140px;
+            width:290px;
+
+        }
+        .child8{
+            grid-area: img8;
+            height:140px;
+            width:290px;
+        }
+        .child9{
+            grid-area: img9;
+            height:140px;
+            width:290px;
+        }
+        .child10{
+            grid-area: img10;
+            height:140px;
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+            <img src="tree.jpg" alt="" style="height: 100%; width:100%;">
+        </div>
+        <div class="child2">
+            <img src="sunset.jpg" alt="" style="height: 100%; width:100%;">
+        </div>
+        <div class="child3">
+            <img src="river.jpg" alt="" style="height: 100%; width:100%;">
+        </div>
+        <div class="child4">
+            <img src="garden.jpg" alt="" style="height: 100%; width:100%;">
+        </div>
+        <div class="child5">
+            <img src="waterfall.jpg" alt="" style="height: 100%; width:100%;" >
+        </div>
+        <div class="child6">
+            <img src="flower.jpg" alt="" style="height: 100%; width:100%;">
+        </div>
+        <div class="child7">
+            <img src="beauty.jpg" alt="" style="height: 100%; width:100%;">
+        </div>
+        <div class="child8">
+            <img src="spring.jpg" alt="" style="height: 100%; width:100%;">
+        </div>
+        <div class="child9">
+            <img src="cloudy.jpg" alt="" style="height: 100%; width:100%;">
+        </div>
+        <div class="child10">
+            <img src="nature.jpg" alt="" style="height: 100%; width:100%;">
+        </div>
+    </div>
+</body>
+</html>
