@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            background-color:orangered;
+            height:300px;
+            width:300px;
+            box-shadow:5px 5px 5px burlywood inset, -5px -5px 5px burlywood inset,5px 5px 5px black inset,-5px -5px 5px black inset;
+            position:relative;
+        }
+        #b{
+            background-color:orange;
+            height:120px;
+            width:120px;
+            position:absolute;
+            top:70px;
+            left:90px;
+            border-radius:80px;
+            z-index:8;
+        }
+        #c{
+            background-color:yellow;
+            position: absolute;
+            border-radius: 100px;
+            height:120px;
+            width:120px;
+            top:90px;
+            left:100px;
+            z-index: 6;
+            animation-name: anim;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes anim{
+            0%{
+                height:120px;
+                width:120px;
+                top:70px;
+                left:90px;
+            }
+            25%{
+                height:140px;
+                width:140px;
+                box-shadow:3px 4px 3px 3px lightgoldenrodyellow,-3px -4px 3px 3px lightgoldenrodyellow;
+                top:70px;
+                left:85px;
+            }
+            50%{
+                height:145px;
+                width:145px;
+                box-shadow:3px 4px 3px 3px  lightgoldenrodyellow,-3px -4px 3px 3px lightgoldenrodyellow;
+                top:65px;
+                left:85px;  
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <div id="b">
+        </div>
+        <div id="c">
+
+        </div>
+    </div>
+</body>
+</html>
